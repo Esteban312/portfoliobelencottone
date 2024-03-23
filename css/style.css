@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+header {
+    background-color: rgb(236, 162, 220);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+nav{
+    background-color: rgb(99, 37, 86) !important;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav ul{
+    margin: 0 auto; /* Centra horizontalmente el navbar */
+    max-width: 960px; /* Ancho máximo del navbar */
+    display:flex;
+    
+}
+
+nav ul li{
+    margin: 10px auto; /* Centra horizontalmente los elementos del navbar */
+    padding: 0 30px;
+    list-style: none;
+    
+}
+
+nav ul li a {
+    font-size: 25px;
+    color:rgb(207, 207, 207);
+    text-decoration: none;
+    transition: 0.2s ease;
+    
+}
+
+nav ul li a:hover {
+    color: white;
+    text-shadow: 1px 1px 4px white;
+}
+
+
+main {
+    background-color: rgb(250, 140, 226);
+}
+.cursiva{
+    font-style: italic;
+}
+.centrado{
+    text-align: center;
+}
+.titulosSecciones {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0;
+    background: linear-gradient(to right, rgba(187, 88, 166, 0), rgb(216, 117, 178), rgba(187, 88, 166, 0)) no-repeat;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.seccionPerfil {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedorImagen {
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.seccionPerfil img {
+    width: 300px;
+    transition: transform 0.3s ease; 
+}
+
+.seccionPerfil img:hover {
+    transform: scale(1.09); 
+}
+
+.textoPerfil {
+    width: 60%;
+}
+
+hr {
+    width: 50%;
+    margin: 0 auto;
+}
+.locucionesIg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    grid-template-rows: repeat(2, auto); /* Dos filas con altura automática */
+    gap: 20px; /* Espacio entre los elementos */
+    width: 100%; /* Ajusta el ancho del grid según el contenedor */
+ }
+ .audioLocu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .audioLocu img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 40px;
+    margin-bottom: 10px;
+ }
+ .audioLocu a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    transition: 0.2s ease;
+ }
+ .audioLocu a:hover{
+    color: white;
+    text-shadow: 1px 1px 4px white;
+ }
+
+footer{
+    background-color: rgb(236, 162, 220);
+}
+footer .contenedorContactoImagenes{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer .contenedorContactoImagenes img{
+    width:100px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+footer .contenedorContactoImagenes img:hover {
+    transform: translateY(-5px); /* Eleva la imagen */
+    filter: brightness(1.2); /* Aumenta el brillo */
+}
+footer .listaContacto ul li{
+    list-style: none;
+}
+footer .listaContacto ul li a{
+    text-decoration: none;
+    color: rgb(65, 12, 43);
+}
+@media (min-width: 769px) {
+    /* Estilos para pantallas de escritorio */
+    .listaContacto {
+        display: none; /* Oculta el div en pantallas de escritorio */
+    }
+}
+ @media (max-width: 768px) {
+    section {
+        margin: 0 auto; /* Centra la sección en dispositivos móviles */
+        width: 90%; /* Ajusta el ancho de la sección */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del título principal */
+    }
+
+    .titulosHeader h2 {
+        display: none; /* Oculta el subtítulo en dispositivos móviles */
+    }
+
+    .seccionPerfil {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra los elementos del flexbox */
+    }
+
+    .contenedorImagen {
+        margin-bottom: 20px; /* Añade un margen inferior a las imágenes */
+    }
+
+    .textoPerfil {
+        width: 100%; /* Ajusta el ancho del texto a la anchura completa */
+    }
+
+    header {
+        max-width: 100%; /* Ajusta el ancho máximo del encabezado al 100% */
+    }
+
+    nav {
+        overflow-x: auto; /* Agrega desplazamiento horizontal si los elementos del nav exceden el ancho de la pantalla */
+    }
+
+    nav ul {
+        display: flex; /* Cambia la lista a un flex container */
+        padding-left: 0; /* Elimina el padding izquierdo de la lista */
+        justify-content: center; /* Centra los elementos del nav horizontalmente */
+    }
+
+    nav ul li {
+        padding: 0 10px; /* Añade un poco de espacio horizontal entre los elementos del nav */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Reduce el tamaño de la fuente de los enlaces del nav */
+    }
+
+    .locucionesIg {
+        grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna en dispositivos móviles */
+    }
+
+    .audioLocu img {
+        width: 300px; /* Fija el ancho de las imágenes a 300px */
+        height: 300px; /* Fija la altura de las imágenes a 300px */
+    }
+    .contenedorContactoImagenes img{
+        display: none;
+    }
+    .listaContacto ul li img{
+        width: 30px;
+        margin-right: 10px;
+    }
+    .listaContacto {
+        display: block; /* Muestra el div en dispositivos móviles */
+        text-align: center; /* Centra el contenido del div */
+    }
+    
+}
+
+    
