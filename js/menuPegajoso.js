@@ -38,3 +38,15 @@ window.addEventListener('scroll', function() {
                 scrollToSection(targetId);
             });
         });
+
+        // Bloquear clic derecho
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+// Bloquear inspección con F12
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'F12') {
+        event.preventDefault();
+    }
+});

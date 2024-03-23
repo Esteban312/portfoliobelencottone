@@ -87,15 +87,13 @@ section {
 .seccionPerfil {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-.contenedorImagen {
-    overflow: hidden;
-    border-radius: 40px;
-}
 
 .seccionPerfil img {
     width: 300px;
+    border-radius: 100%;
     transition: transform 0.3s ease; 
 }
 
