@@ -6,6 +6,7 @@
 
 body {
     font-family: "Rubik", sans-serif;
+    background-color: rgb(236, 162, 220);
 }
 
 header {
@@ -94,7 +95,8 @@ section {
 .seccionPerfil img {
     width: 300px;
     border-radius: 100%;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 10px black; 
 }
 
 .seccionPerfil img:hover {
@@ -188,7 +190,7 @@ footer .listaContacto ul li a{
     }
 
     h1 {
-        font-size: 1.5rem; /* Reduce el tamaño del título principal */
+        font-size: 2rem; /* Reduce el tamaño del título principal */
     }
     .titulosSecciones{
         margin: 30px 0;
