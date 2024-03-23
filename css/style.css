@@ -118,6 +118,13 @@ hr {
     gap: 20px; /* Espacio entre los elementos */
     width: 100%; /* Ajusta el ancho del grid según el contenedor */
  }
+ .notasTwitter {
+    display: flex
+}
+.notasTwitter blockquote{
+    width: 400px;
+    margin: 10px;
+}
  .audioLocu{
     display: flex;
     flex-direction: column;
@@ -172,6 +179,9 @@ footer .listaContacto ul li a{
     .listaContacto {
         display: none; /* Oculta el div en pantallas de escritorio */
     }
+    .desktop{
+        display: none;
+    }
 }
  @media (max-width: 768px) {
     section {
@@ -182,7 +192,9 @@ footer .listaContacto ul li a{
     h1 {
         font-size: 1.5rem; /* Reduce el tamaño del título principal */
     }
-
+    .titulosSecciones{
+        margin: 30px 0;
+    }
     .titulosHeader h2 {
         display: none; /* Oculta el subtítulo en dispositivos móviles */
     }
@@ -230,6 +242,9 @@ footer .listaContacto ul li a{
         width: 300px; /* Fija el ancho de las imágenes a 300px */
         height: 300px; /* Fija la altura de las imágenes a 300px */
     }
+    .notasTwitter{
+        flex-direction: column;
+    }
     .contenedorContactoImagenes img{
         display: none;
     }
@@ -240,6 +255,9 @@ footer .listaContacto ul li a{
     .listaContacto {
         display: block; /* Muestra el div en dispositivos móviles */
         text-align: center; /* Centra el contenido del div */
+    }
+    .mobile{
+        display:none;
     }
     
 }
